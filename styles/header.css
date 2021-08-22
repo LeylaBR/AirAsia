@@ -1,14 +1,19 @@
 
 .header {
     min-height: 123px;
-    position: relative;
-    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     display: block;
-    position: absolute;
-    top: 29px;
+    margin-right: 79px;
 }
 
 .logo__img {
@@ -16,14 +21,11 @@
     height: 36px;
 }
 
-.menu {
-    top: 40px;
-    left: 164px;
-    position: absolute;
+.menu__list {
+    display: flex;
 }
 
 .menu__item {
-    display: inline-block;
     vertical-align: middle;
     margin-right: 50px;
 } 
@@ -31,12 +33,6 @@
 .menu__item:last-child {
     margin-right: 0;
 } 
-
-.contacts {
-    top: 27px;
-    right: 0px;
-    position: absolute;
-}
 
 .menu__link {
     text-decoration: none;
@@ -46,18 +42,4 @@
     color: #DA0100;
 }
 
-.contacts {
-    font-style: normal;
-    text-align: right;
-}
 
-.contacts__phone {
-    text-decoration: none;
-    font-size: 26px;
-}
-
-.contacts__dropdown-title {
-    font-size: 13px;
-    text-decoration: underline;
-    margin-top: -8px;
-}

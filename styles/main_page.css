@@ -1,21 +1,35 @@
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+}
+
 .main-page-wrapper {
     background: url(../img/hero.jpg) center top no-repeat, url(../img/bottom-pic.jpg) right -174px bottom 170px no-repeat;
 }
 
 
 .hero {
-    margin-bottom: 245px;
+    margin-bottom: 244px;
 }
 
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 540px;
+}
 
-.hero__text-section {
-    width: 579px;
+.hero__content {
+    width: 50%;
 }
 
 .hero__title {
     font-size: 72px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
     line-height: 98px;
 }
 
@@ -29,32 +43,30 @@
 .features {
     margin-bottom: 118px;
 }
-
-.features__title {
-    display: inline-block;
-    margin-right: 12px;
-}
+  
+.features__title::after {
+    content: url(../img/fire.png);
+    margin-left: 12px;
     
+}
+
 .features__name {
     margin-bottom: 51px;
 }
 
 .features__list {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     vertical-align: middle;
 }
 
 .features__item {
     min-height: 305px;
     background: #FFFFFF;
-    display: inline-block;
-    margin-right: 27px;
-    width: 359px;
     vertical-align: middle;
-    background-repeat: no-repeat;
     border-radius: 5px;
     overflow: hidden;
-
+    width: calc(100% / 3 - 18px);
 }
 
 .features__item:last-child {
@@ -80,39 +92,40 @@
 }
 
 .features__header {
-    display: block;
     min-height: 144px;
-    min-width: 100%;
-    background-size: cover;
-    background-position-x: center;
+    width: 362px;
 }
 
 .features__item:first-child .features__header {
-    background: url(../img/thailand.jpg);
+    background: url(../img/thailand.jpg) no-repeat;
     background-position-y: -24px;
+    background-size: cover;
 }
 
 .features__item:nth-child(2) .features__header {
-    background: url(../img/bali.jpg);
+    background: url(../img/bali.jpg) no-repeat;
     background-position-y: -30px;
+    background-size: cover;
 }
 
 .features__item:last-child .features__header {
-    background: url(../img/indonesia.jpg);
+    background: url(../img/indonesia.jpg) no-repeat;
     background-position-y: -36px;
+    background-size: cover;
 }
 
 .features__content {
-    padding: 33px 20px;
+    padding: 34px 21px;
 }
 
 .features__details {
     padding-left: 7px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    display: flex;
 }
 
 .features__details-info {
-    display: inline-block;
+    display: flex;
     margin-right: 25px;
 }
 
@@ -146,6 +159,8 @@
 
 .news__list {
     margin-bottom: 53px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .news__background {
@@ -158,10 +173,8 @@
 
 .news__item {
     width: 555px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 25px;
     position: relative;
+    vertical-align: top;
 }
 
 .news__item:last-child {
@@ -192,8 +205,6 @@
 
 .about__section:before {
     content: "";
-    display: inline-block;
-    vertical-align: top;
     width: 490px;
     height: 505px;
     background: url(../img/gates.jpg) center center;
@@ -202,12 +213,11 @@
 }
 
 .about__section {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
+    display: flex;
 }
 
 .about__description {
-    display: inline-block;
-    vertical-align: top;
     background: url(../img/mountains.jpg);
     background-position-x: center;
     background-size: cover;
@@ -238,8 +248,3 @@
 .about__text > p:last-child {
     margin-bottom: 0;
 }
-
-.footer-main-page {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-

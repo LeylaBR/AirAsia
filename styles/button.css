@@ -1,0 +1,13 @@
+.button {
+    display: inline-block;
+    background: #F5170E;
+    border-radius: 55px;
+    padding: 18px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #DA0100;
+}

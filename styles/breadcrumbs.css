@@ -1,0 +1,23 @@
+.breadcrumbs {
+    padding-bottom: 23px;
+}
+
+.breadcrumbs__list, .breadcrumbs__item {
+    display: flex;
+    vertical-align: top;
+    color: #9A9A9A;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+    content: "/";
+    color: #9A9A9A;
+    margin: 0 3px;
+}
+
+.breadcrumbs__title {
+    text-decoration: underline;
+}
+
+.breadcrumbs__title--active {
+    font-weight: 700;
+}
