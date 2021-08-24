@@ -1,5 +1,8 @@
-.socials__list {
+.socials {
     margin-right: 80px;
+}
+
+.socials__list {
     display: flex;
 }
 
@@ -17,7 +20,7 @@
 
 .socials__link:hover {
     opacity: 1;
-  }
+}
 
 .socials__item:last-child {
     margin-right: 0;

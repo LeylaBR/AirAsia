@@ -14,10 +14,6 @@
     margin: 0 3px;
 }
 
-.breadcrumbs__title {
-    text-decoration: underline;
-}
-
 .breadcrumbs__title--active {
     font-weight: 700;
 }
