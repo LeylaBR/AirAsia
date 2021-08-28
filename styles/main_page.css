@@ -52,6 +52,7 @@
 
 .features__name {
     margin-bottom: 51px;
+    display: flex
 }
 
 .features__list {
@@ -135,18 +136,6 @@
 
 .features__info-img {
     margin-right: 5px;
-}
-
-.features__button {
-    color: #F5170E;
-    background: #FFFFFF;
-    border: 1px solid #F5170E;
-    padding: 18px 30px;
-}
-
-.features__button:hover {
-    background: #F5170E;
-    color: #FFFFFF;
 }
 
 .news {

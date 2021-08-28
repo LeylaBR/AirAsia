@@ -12,7 +12,7 @@
 
 .header__services {
     min-height: 110px;
-    margin-bottom: 59px;
+    margin-bottom: 50px;
 }
 
 .headline--back {
@@ -25,7 +25,7 @@
 .headline__title {
     font-size: 72px;
     line-height: 98px;
-    margin-bottom: 103px;
+    margin-bottom: 115px;
 }
 
 .main-services {
@@ -48,7 +48,7 @@
 }
 
 .services__list{
-    margin-bottom: 70px;
+    margin-bottom: 64px;
 }
 
 .services__item {
@@ -116,4 +116,5 @@
 
 .partners__link:hover {
     filter: grayscale(0);
+    transition: .5s;
 }

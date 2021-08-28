@@ -6,8 +6,38 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .button:hover {
     background: #DA0100;
+    transition: .5s;
+}
+
+.button-dark {
+    background: #8E8E8E;
+}
+
+.button-dark:hover {
+    background: #2B2B2B;
+    transition: .5s;
+}
+
+.features__button {
+    color: #F5170E;
+    background: #FFFFFF;
+    border: 1px solid #F5170E;
+    padding: 18px 30px;
+}
+
+.features__button:hover {
+    background: #F5170E;
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.button-light {
+    padding: 18px 36px;
 }

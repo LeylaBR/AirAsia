@@ -16,10 +16,33 @@
     width: 36px;
     height: 36px;
     opacity: .5;
+    position: relative;
 }
 
 .socials__link:hover {
     opacity: 1;
+    transition: .5s;
+}
+
+.socials__icon {
+    width: 36px;
+    height: 36px;
+}
+
+.socials__icon-telegram {
+    background: url(../img/socials_sprites.png) -10px -10px; 
+}
+
+.socials__icon-vk {
+    background: url(../img/socials_sprites.png) -66px -10px; 
+}
+
+.socials__icon-facebook {
+    background: url(../img/socials_sprites.png) -122px -10px;    
+}
+
+.socials__icon-instagram {
+    background: url(../img/socials_sprites.png) -178px -10px;    
 }
 
 .socials__item:last-child {
