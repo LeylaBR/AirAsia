@@ -161,29 +161,37 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -10px;
 }
 
 .controls__items {
-    margin-right: 8px;
+    margin-right: 10px;
     margin-bottom: 9px
+}
+
+
+.controls__items:nth-child(n+6) {
+    margin-bottom: 0;
 }
 
 .form__input {
     flex: 1;
     margin-right: 30px;
     border-radius: 5px;
-    border: none;
     background: #FFFFFF;
     padding: 20px 30px;
-    color: #666666;
+    color: #1A1B1E;
     font-size: 18px;
     outline:none;
     border:1px solid transparent;
-    
+}
+
+.form__input::placeholder {
+    color: #666666;
 }
 
 .form__input:focus  {
-    border:1px solid #F5170E;
+    border-color: #F5170E;
 }
 
 .form__input:last-child {
